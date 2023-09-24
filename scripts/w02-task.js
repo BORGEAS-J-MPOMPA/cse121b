@@ -28,13 +28,17 @@ nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentYear;
 imageElement.setAttribute('src', profilePicture);
 
+imageElement.setAttribute('alt', "my Image");
 
 
 
 /* Step 5 - Array */
-
-
-
-
-
-
+let foodArray = ["Banga soup", "Mushrooms and Foufou", "Fried Herrings", "Chicken Sauce", "Green Beans", "Cassava", "Rice", "Vegetables", "Porc Meat", "Asparagus", "Caterpillar with Eggplants","Kao with Pasta"];
+foodElement.textContent = foodArray;
+let singleFood = "Catfish with peanuts sauce and boiled banana";
+foodArray.push(singleFood);
+foodElement.innerHTML +=`<br>${foodArray}`;
+foodArray.shift();
+foodElement.innerHTML +=`<br>${foodArray}`;
+foodArray.pop();
+foodElement.innerHTML +=`<br>${foodArray}`;
