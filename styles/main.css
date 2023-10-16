@@ -106,6 +106,9 @@ section {
 label {
     margin: 15px 0;
 }
+input, select, button {
+    padding: .5rem;
+}
 
 footer {
     background-color: gray;
